@@ -10,7 +10,7 @@ var world_springtraining = new function() {
 
   this.options = {};
   this.robotStart = {
-    position: new BABYLON.Vector3(0, 0, 0), // Overridden by position setting,
+    position: new BABYLON.Vector3(70, -40, 0), // Overridden by position setting,
     rotation: new BABYLON.Vector3(0, 0, 0)
   };
 
