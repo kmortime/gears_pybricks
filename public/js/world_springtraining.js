@@ -1,8 +1,8 @@
 var world_springtraining = new function() {
   var self = this;
 
-  this.name = 'image';
-  this.shortDescription = 'Generate from image';
+  this.name = 'springtraining';
+  this.shortDescription = 'FSS FLL Spring Training';
   this.longDescription =
     '<p>This world is automatically generated from the selected image.</p>' +
     '<p>You can use your own image or choose one of the provided images. The 3D world will be generated at a scale of 1px to 1mm.</p>';
