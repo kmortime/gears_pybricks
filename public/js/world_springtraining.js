@@ -338,12 +338,12 @@ var world_springtraining = new function() {
   this.loadObjects = function (scene) {
 
   // Bumps
-    self.buildStatic(scene,[1,33,3],[39,0.5,22]);
+    self.buildStatic(scene,[1,33,3],[41,0.5,22]);
 
   // Boxes for pushing
     self.buildKinematic(scene,[4,4,4],[72,2,10],800);
     self.buildKinematic(scene,[4,4,4],[-73,2,22],800);
-    self.buildKinematic(scene,[4,4,4],[-65,2,-20],800);
+    self.buildKinematic(scene,[4,4,4],[62,2,-22],800);
   };
 
   // Add magnetic
