@@ -21,12 +21,7 @@ var world_springtraining = new function() {
       type: 'select',
       options: [
         ['Spring Training', 'textures/maps/images/spring_training.jpg'],
-        ['WRO 2019', 'textures/maps/images/WRO-2019-Regular-Junior.jpg'],
-        ['WRO 2018', 'textures/maps/images/WRO-2018-Regular-Junior.png'],
-        ['FLL 2021', 'textures/maps/images/FLL2021.jpg'], 
-        ['FLL 2020', 'textures/maps/images/FLL2020.jpg'],        
-        ['FLL 2019', 'textures/maps/images/FLL2019.jpg'],
-        ['FLL 2018', 'textures/maps/images/FLL2018.jpg']
+        ['FLL 2021', 'textures/maps/images/FLL2021.jpg']
       ],
       help: 'You can override this by setting an image URL or uploading a file'
     },
@@ -162,7 +157,7 @@ var world_springtraining = new function() {
           let x = (self.options.length / 2 - 12.5);
           let z = -(self.options.width / 2 - 12.5) + 1;
           self.robotStart.position = new BABYLON.Vector3(x, 0, z);
-
+        }
         if (typeof self.options.startPosXY != 'undefined' && self.options.startPosXY.trim() != '') {
           let xy = self.options.startPosXY.split(',');
           self.robotStart.position = new BABYLON.Vector3(parseFloat(xy[0]), 0, parseFloat(xy[1]));
