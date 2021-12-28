@@ -322,6 +322,9 @@ var world_springtraining = new function() {
         self.addMagnetics(scene, self.options.magnetics);
       }
 
+      // Add FSS FLL Base Objects:
+      self.loadObjects(scene);
+
       resolve();
     });
   };
@@ -348,6 +351,19 @@ var world_springtraining = new function() {
       obstacleMeshes.push(obstacle);
     }
     return obstacleMeshes;
+  };
+  // Add Objects
+  this.loadObjects = function (scene) {
+
+  // Bumps
+    self.buildStatic(scene,[1,30,1],[140,0.5,15]);
+    self.buildStatic(scene,[1,30,1],[140,0.5,20]);
+    self.buildStatic(scene,[1,30,1],[140,0.5,25]);
+    self.buildStatic(scene,[1,30,1],[140,0.5,30]);
+
+  // Boxes for pushing
+    self.buildKinematic(scene,[8,8,8],[-70,4,20],800);
+    self.buildKinematic(scene,[8,8,8],[-105,4,20],1600);
   };
 
   // Add magnetic
