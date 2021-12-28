@@ -80,11 +80,8 @@ var world_springtraining = new function() {
       title: 'Starting Position',
       type: 'select',
       options: [
-        ['Center', 'center'],
-        ['Bottom Left', 'bottomLeft'],
-        ['Bottom Center', 'bottomCenter'],
-        ['Bottom Right', 'bottomRight'],
-        ['FLL Start Area', 'FllStart']
+        ['Start Area Facing North', 'startNorth'],
+        ['Start Area Facing West', 'startWest']
       ]
     },
     {
@@ -157,24 +154,14 @@ var world_springtraining = new function() {
         self.options.length = this.width / 10.0;
         self.options.width = this.height / 10.0;
 
-        if (self.options.startPos == 'center') {
-          self.robotStart.position = new BABYLON.Vector3(0, 0, -6);
-        } else if (self.options.startPos == 'bottomLeft') {
-          let x = -(self.options.length / 2 - 12.5);
-          let z = -(self.options.width / 2 - 12.5) + 1;
-          self.robotStart.position = new BABYLON.Vector3(x, 0, z);
-        } else if (self.options.startPos == 'bottomCenter') {
-          let z = -(self.options.width / 2 - 12.5) + 1;
-          self.robotStart.position = new BABYLON.Vector3(0, 0, z);
-        } else if (self.options.startPos == 'bottomRight') {
+        if (self.options.startPos == 'startWest') {
           let x = (self.options.length / 2 - 12.5);
           let z = -(self.options.width / 2 - 12.5) + 1;
           self.robotStart.position = new BABYLON.Vector3(x, 0, z);
-        } else if (self.options.startPos == 'FllStart') {
-          let x = -55;
-          let z = -40;
-          self.robotStart.position = new BABYLON.Vector3(x,0,z);
-        }
+        } else if (self.options.startPos == 'startNorth') {
+          let x = (self.options.length / 2 - 12.5);
+          let z = -(self.options.width / 2 - 12.5) + 1;
+          self.robotStart.position = new BABYLON.Vector3(x, 0, z);
 
         if (typeof self.options.startPosXY != 'undefined' && self.options.startPosXY.trim() != '') {
           let xy = self.options.startPosXY.split(',');
@@ -183,8 +170,8 @@ var world_springtraining = new function() {
         if (typeof self.options.startRot != 'undefined' && self.options.startRot.trim() != '') {
           self.robotStart.rotation.y = parseFloat(self.options.startRot) / 180 * Math.PI;
         } else {
-          if (self.options.startPos== 'FllStart') {
-            self.robotStart.rotation.y = Math.PI/2.0;
+          if (self.options.startPos== 'startWest') {
+            self.robotStart.rotation.y = Math.PI/2.0*3;
           } else {
             self.robotStart.rotation.y = 0;
           }
