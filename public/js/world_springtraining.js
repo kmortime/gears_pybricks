@@ -394,6 +394,51 @@ var world_springtraining = new function() {
     return magneticMeshes;
   };
 
+ // static object builder
+  this.buildStatic = function(scene, dim, pos, rot=[0,0,0], friction=self.options.staticObjectFriction, restitution=self.options.staticObjectRestitution) {
+    var ramp = BABYLON.MeshBuilder.CreateBox('ramp', {height: dim[0], width: dim[1], depth: dim[2]}, scene);
+    ramp.position.x = pos[0];
+    ramp.position.y = pos[1];
+    ramp.position.z = pos[2];
+    ramp.rotation.x = rot[0];
+    ramp.rotation.y = rot[1];
+    ramp.rotation.z = rot[2];
+    ramp.material = self.staticMat;
+
+    ramp.physicsImpostor = new BABYLON.PhysicsImpostor(
+      ramp,
+      BABYLON.PhysicsImpostor.BoxImpostor,
+      {
+        mass: 0,
+        friction: friction,
+        restitution: restitution
+      },
+      scene
+    );
+  };
+
+  // kinematic object builder
+  this.buildKinematic = function(scene, dim, pos, mass=200, rot=[0,0,0], friction=self.options.kinematicObjectFriction, restitution=self.options.kinematicObjectRestitution) {
+    var block = BABYLON.MeshBuilder.CreateBox('block', {height: dim[0], width: dim[1], depth: dim[2]}, scene);
+    block.position.x = pos[0];
+    block.position.y = pos[1];
+    block.position.z = pos[2];
+    block.rotation.x = rot[0];
+    block.rotation.y = rot[1];
+    block.rotation.z = rot[2];
+    block.material = self.kinematicMat;
+
+    block.physicsImpostor = new BABYLON.PhysicsImpostor(
+      block,
+      BABYLON.PhysicsImpostor.BoxImpostor,
+      {
+        mass: mass,
+        friction: friction,
+        restitution: restitution
+      },
+      scene
+    );
+  }
   // Add box
   this.addBox = function(scene, material, size, pos, magnetic=false, physicsOptions=true, visible=true, rot=[0,0,0], faceUV=null) {
     var boxOptions = {
