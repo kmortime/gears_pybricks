@@ -152,11 +152,11 @@ var world_springtraining = new function() {
         if (self.options.startPos == 'startWest') {
           let x = (self.options.length / 2 - 12.5);
           let z = -(self.options.width / 2 - 12.5) + 1;
-          self.robotStart.position = new BABYLON.Vector3(x, 0, z);
+          self.robotStart.position = new BABYLON.Vector3(x, 0.1, z);
         } else if (self.options.startPos == 'startNorth') {
           let x = (self.options.length / 2 - 12.5);
           let z = -(self.options.width / 2 - 12.5) + 1;
-          self.robotStart.position = new BABYLON.Vector3(x, 0, z);
+          self.robotStart.position = new BABYLON.Vector3(x, 0.1, z);
         }
         if (typeof self.options.startPosXY != 'undefined' && self.options.startPosXY.trim() != '') {
           let xy = self.options.startPosXY.split(',');
@@ -338,11 +338,11 @@ var world_springtraining = new function() {
   this.loadObjects = function (scene) {
 
   // Bumps
-    self.buildStatic(scene,[0.5,33,3],[37,0.5,22]);
+    self.buildStatic(scene,[0.5,33,3],[39,0.5,22]);
 
   // Boxes for pushing
-    self.buildKinematic(scene,[4,4,4],[72,4,10],800);
-    self.buildKinematic(scene,[4,4,4],[-72,4,22],1600);
+    self.buildKinematic(scene,[4,4,4],[72,2,10],800);
+    self.buildKinematic(scene,[4,4,4],[-72,2,22],1600);
   };
 
   // Add magnetic
