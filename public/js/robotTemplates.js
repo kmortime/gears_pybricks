@@ -1,4 +1,63 @@
 var robotTemplates = [
+  { name: 'fssfllsingleFollower',
+    shortDescription: 'FSS FLL Single Sensor Line Follower',
+    longDescription:
+      '<p>This robot is equipped with a single color sensor for line following.</p>' +
+      '<p>For use with the FSS FLL Spring Training.</p>' +
+      '<p>It\'s good for learning the basics of programming in python</p>',
+    longerDescription:
+      '<h3>Dimensions</h3>' +
+      '<ul>' +
+        '<li>Wheel Diameter: 5.6 cm</li>' +
+        '<li>Wheel Spacing: 10.1 cm</li>' +
+      '</ul>' +
+      '<h3>Actuators</h3>' +
+      '<ul>' +
+        '<li>Port A : None</li>' +
+        '<li>Port B : Left Wheel</li>' +
+        '<li>Port C : Right Wheel</li>' +
+        '<li>Port D : None</li>' +
+      '</ul>' +
+      '<h3>Sensors</h3>' +
+      '<ul>' +
+        '<li>Port 1 : Color Sensor</li>' +
+        '<li>Port 2 : None</li>' +
+        '<li>Port 3 : None</li>' +
+        '<li>Port 4 : None</li>' +
+      '</ul>',
+    thumbnail: 'images/robots/singleFollower.jpg',
+
+    bodyHeight: 9,
+    bodyWidth: 9,
+    bodyLength: 16,
+
+    wheelDiameter: 5.6,
+    wheelWidth: 1.4,
+    wheelToBodyOffset: 0.2,
+
+    bodyEdgeToWheelCenterY: 2,
+    bodyEdgeToWheelCenterZ: 6,
+
+    bodyMass: 1000,
+    wheelMass: 200,
+    casterMass: 0, // Warning: No effect due to parenting
+
+    wheelFriction: 10,
+    bodyFriction: 0,
+    casterFriction: 0, // Warning: No effect due to parenting
+    caster: true,
+    casterOffsetZ: 0,
+    casterDiameter: 1.8,
+
+    components: [
+      {
+        type: 'ColorSensor',
+        position: [0, -3, 7],
+        rotation: [Math.PI/2, 0, 0],
+        options: null
+      }
+    ]
+  },
   { name: 'singleFollower',
     shortDescription: 'Single Sensor Line Follower',
     longDescription:
