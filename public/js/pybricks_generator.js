@@ -64,10 +64,10 @@ var pybricks_generator = new function() {
 
       '\n' +
       'ev3 = EV3Brick()\n' +
-      'motorA = Motor(Port.A)\n' +          
-      'motorB = Motor(Port.B)\n' +      
-      'left_motor = motorA\n' + 
-      'right_motor = motorB\n' + 
+      'motorB = Motor(Port.B)\n' +          
+      'motorC = Motor(Port.C)\n' +      
+      'left_motor = motorB\n' + 
+      'right_motor = motorC\n' + 
        
       'robot = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=152)\n' +   
       // TODO only required if user using straight or turn commands...
