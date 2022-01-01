@@ -52,22 +52,22 @@ var robotTemplates = [
     components: [
             {
         type: 'Box',
-        position: [-8.7, -1, 3],
+        position: [-4.5, -1, 3],
         rotation: [0, 0, 0],
         options: {
-          height: 3,
+          height: 4,
           width: 1,
-          depth: 14
+          depth: 2
         }
       },
       {
         type: 'Box',
-        position: [8.7, -1, 3],
+        position: [4.5, -1, 3],
         rotation: [0, 0, 0],
         options: {
-          height: 3,
+          height: 4,
           width: 1,
-          depth: 14
+          depth: 2
         }
       },
       {
