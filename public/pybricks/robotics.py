@@ -232,8 +232,8 @@ class DriveBase:
                 
         ramp_down(wait_per_segment, speed_segment_deg)
 
-        # self.reset() Commenting this line out 01-01-21; Distance is getting cleared.
-
+        self.reset()
+        
     def turn(self, angle): # pivot turn
         '''
             Robot:
