@@ -31,9 +31,9 @@ var $builtinmodule = function(name) {
 
     $loc.__init__ = new Sk.builtin.func(function(self, address) {
 
-      if (address.v == 'outA') {
+      if (address.v == 'outB') {
         self.motor = robot.leftWheel;
-      } else if (address.v == 'outB') {
+      } else if (address.v == 'outC') {
         self.motor = robot.rightWheel;
       } else {
         self.motor = robot.getComponentByPort(address.v);
