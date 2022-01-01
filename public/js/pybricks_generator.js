@@ -113,9 +113,8 @@ var pybricks_generator = new function() {
     }
     code += sensorsCode + '\n';
     code += motorsCode + '\n';
-    code += '######################################################\n' +
-    code += '# Here is where your code starts\n';
-    code += '######################################################\n\n' +
+    code += '# Here is where your code starts\n\n';
+
 
 
     code += Blockly.Python.workspaceToCode(blockly.workspace);
