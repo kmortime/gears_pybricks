@@ -69,7 +69,7 @@ var pybricks_generator = new function() {
       'left_motor = motorB\n' + 
       'right_motor = motorC\n' + 
        
-      'robot = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=162)\n' +   
+      'robot = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=158)\n' +   
       // TODO only required if user using straight or turn commands...
       'robot.settings(straight_speed=' + self.straight_speed + ', ' +
                      'straight_acceleration=' + self.straight_acceleration +  ', ' +
