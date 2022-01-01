@@ -46,8 +46,8 @@ var ev3dev2_generator = new function() {
       '# Create the sensors and motors objects\n' +
       'motorB = LargeMotor(OUTPUT_B)\n' +
       'motorC = LargeMotor(OUTPUT_C)\n' +
-      'left_motor = motorA\n' +
-      'right_motor = motorB\n' +
+      'left_motor = motorB\n' +
+      'right_motor = motorC\n' +
       'tank_drive = MoveTank(OUTPUT_B, OUTPUT_C)\n' +
       'steering_drive = MoveSteering(OUTPUT_B, OUTPUT_C)\n' +
       '\n' +
