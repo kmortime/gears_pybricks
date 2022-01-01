@@ -52,7 +52,7 @@ var robotTemplates = [
     components: [
             {
         type: 'Box',
-        position: [-4.5, -1, 3],
+        position: [-4.5, -0.5, 7.5],
         rotation: [0, 0, 0],
         options: {
           height: 4,
@@ -62,7 +62,7 @@ var robotTemplates = [
       },
       {
         type: 'Box',
-        position: [4.5, -1, 3],
+        position: [4.5, -0.5, 7.5],
         rotation: [0, 0, 0],
         options: {
           height: 4,
