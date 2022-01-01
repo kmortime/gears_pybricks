@@ -44,12 +44,12 @@ var ev3dev2_generator = new function() {
       'from ev3dev2.sensor.virtual import *\n' +
       '\n' +
       '# Create the sensors and motors objects\n' +
-      'motorA = LargeMotor(OUTPUT_A)\n' +
       'motorB = LargeMotor(OUTPUT_B)\n' +
+      'motorC = LargeMotor(OUTPUT_C)\n' +
       'left_motor = motorA\n' +
       'right_motor = motorB\n' +
-      'tank_drive = MoveTank(OUTPUT_A, OUTPUT_B)\n' +
-      'steering_drive = MoveSteering(OUTPUT_A, OUTPUT_B)\n' +
+      'tank_drive = MoveTank(OUTPUT_B, OUTPUT_C)\n' +
+      'steering_drive = MoveSteering(OUTPUT_B, OUTPUT_C)\n' +
       '\n' +
       'spkr = Sound()\n' +
       '\n';
