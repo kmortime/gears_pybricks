@@ -398,7 +398,7 @@ var world_springtraining = new function() {
   };
 
   // kinematic object builder
-  this.buildKinematic = function(scene, dim, pos, mass=400, rot=[0,0,0], friction=self.options.kinematicObjectFriction, restitution=self.options.kinematicObjectRestitution) {
+  this.buildKinematic = function(scene, dim, pos, mass=400, rot=[0,0,0], friction=0.5, restitution=self.options.kinematicObjectRestitution) {
     var block = BABYLON.MeshBuilder.CreateBox('block', {height: dim[0], width: dim[1], depth: dim[2]}, scene);
     block.position.x = pos[0];
     block.position.y = pos[1];
