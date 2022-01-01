@@ -6,7 +6,7 @@ var world_springtraining = new function() {
   this.longDescription =
     '<p>This world is automatically generated from the selected image.</p>' +
     '<p>You can use your own image or choose one of the provided images. The 3D world will be generated at a scale of 1px to 1mm.</p>';
-  this.thumbnail = 'images/worlds/fll.jpg';
+  this.thumbnail = 'images/worlds/springtraining_mat.JPG';
 
   this.options = {};
   this.robotStart = {
