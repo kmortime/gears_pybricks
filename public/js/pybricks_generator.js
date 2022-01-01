@@ -53,6 +53,10 @@ var pybricks_generator = new function() {
     let code =
       '#!/usr/bin/env python3\n' +
       `\n` +
+      '######################################################\n' +
+      '# Basic setup for FSS FLL Spring Training Robot\n' +
+      '# !!! -- DO NOT CHANGE THIS PART OF THE PROGRAM -- !!!\n' +
+      '######################################################\n\n' +
       '# Import the necessary libraries\n' +
       'import math\n' +
       'import time\n' +      
@@ -69,7 +73,7 @@ var pybricks_generator = new function() {
       'left_motor = motorB\n' + 
       'right_motor = motorC\n' + 
        
-      'robot = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=104)\n' +   
+      'robot = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=108)\n' +   
       // TODO only required if user using straight or turn commands...
       'robot.settings(straight_speed=' + self.straight_speed + ', ' +
                      'straight_acceleration=' + self.straight_acceleration +  ', ' +
@@ -109,8 +113,10 @@ var pybricks_generator = new function() {
     }
     code += sensorsCode + '\n';
     code += motorsCode + '\n';
+    code += '######################################################\n' +
+    code += '# Here is where your code starts\n';
+    code += '######################################################\n\n' +
 
-    code += '# Here is where your code starts\n\n';
 
     code += Blockly.Python.workspaceToCode(blockly.workspace);
     return code
