@@ -36,7 +36,7 @@ var robotTemplates = [
     wheelToBodyOffset: 0.2,
 
     bodyEdgeToWheelCenterY: 2,
-    bodyEdgeToWheelCenterZ: 6,
+    bodyEdgeToWheelCenterZ: 4,
 
     bodyMass: 2000,
     wheelMass: 200,
@@ -52,7 +52,7 @@ var robotTemplates = [
     components: [
       {
         type: 'ColorSensor',
-        position: [0, -1, 7],
+        position: [0, 0, 7],
         rotation: [Math.PI/2, 0, 0],
         options: null
       }
