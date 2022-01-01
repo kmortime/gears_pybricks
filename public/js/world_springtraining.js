@@ -342,8 +342,8 @@ var world_springtraining = new function() {
 
   // Boxes for pushing
     self.buildKinematic(scene,[4,4,4],[72,2,10],800);
-    self.buildKinematic(scene,[4,4,4],[-68,2,22],800);
-    self.buildKinematic(scene,[4,4,4],[62,2,-22],800);
+    self.buildKinematic(scene,[4,4,4],[-73,2,22],800);
+    self.buildKinematic(scene,[4,4,4],[55,2,-22],800);
   };
 
   // Add magnetic
