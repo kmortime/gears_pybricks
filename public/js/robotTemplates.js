@@ -50,6 +50,26 @@ var robotTemplates = [
     casterDiameter: 1.8,
 
     components: [
+            {
+        type: 'Box',
+        position: [-8.7, -1, 3],
+        rotation: [0, 0, 0],
+        options: {
+          height: 3,
+          width: 1,
+          depth: 14
+        }
+      },
+      {
+        type: 'Box',
+        position: [8.7, -1, 3],
+        rotation: [0, 0, 0],
+        options: {
+          height: 3,
+          width: 1,
+          depth: 14
+        }
+      },
       {
         type: 'ColorSensor',
         position: [0, -0.5, 7],
