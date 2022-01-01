@@ -27,7 +27,7 @@ var robotTemplates = [
       '</ul>',
     thumbnail: 'images/robots/singleFollower.jpg',
 
-    bodyHeight: 9,
+    bodyHeight: 4,
     bodyWidth: 9,
     bodyLength: 16,
 
@@ -38,7 +38,7 @@ var robotTemplates = [
     bodyEdgeToWheelCenterY: 2,
     bodyEdgeToWheelCenterZ: 6,
 
-    bodyMass: 1000,
+    bodyMass: 2000,
     wheelMass: 200,
     casterMass: 0, // Warning: No effect due to parenting
 
