@@ -52,7 +52,7 @@ var robotTemplates = [
     components: [
       {
         type: 'ColorSensor',
-        position: [0, 0, 7],
+        position: [0, -0.5, 7],
         rotation: [Math.PI/2, 0, 0],
         options: null
       }
