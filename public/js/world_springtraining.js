@@ -16,61 +16,6 @@ var world_springtraining = new function() {
 
   this.optionsConfigurations = [
     {
-      option: 'image',
-      title: 'Select Image',
-      type: 'select',
-      options: [
-        ['Spring Training', 'textures/maps/images/spring_training.jpg'],
-        ['FLL 2021', 'textures/maps/images/FLL2021.jpg']
-      ],
-      help: 'You can override this by setting an image URL or uploading a file'
-    },
-    {
-      option: 'imageURL',
-      title: 'Image URL',
-      type: 'text',
-      help: 'This will not work with many webhosts, as they block their images from being used in a different domain. Imgur will work.'
-    },
-    {
-      option: 'imageFile',
-      title: 'Upload Image',
-      type: 'file',
-      accept: 'image/*',
-      help: 'This will override both "Select Image" and "Image URL"'
-    },
-    {
-      option: 'wall',
-      title: 'Wall',
-      type: 'checkbox',
-      label: 'Wall Present'
-    },
-    {
-      option: 'wallHeight',
-      title: 'Wall Height (cm)',
-      type: 'slider',
-      min: '0',
-      max: '30',
-      step: '0.1'
-    },
-    {
-      option: 'wallThickness',
-      title: 'Wall Thickness (cm)',
-      type: 'slider',
-      min: '0',
-      max: '30',
-      step: '0.1'
-    },
-    {
-      option: 'obstacles',
-      type: 'set',
-      value: []
-    },
-    {
-      option: 'magnetics',
-      type: 'set',
-      value: []
-    },
-    {
       option: 'startPos',
       title: 'Starting Position',
       type: 'select',
@@ -94,7 +39,7 @@ var world_springtraining = new function() {
   ];
 
   this.defaultOptions = {
-    image: 'textures/maps/WRO-2019-Regular-Junior.jpg',
+    image: 'textures/maps/images/spring_training.jpg',
     imageURL: '',
     length: 100,
     width: 100,
