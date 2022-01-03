@@ -10,7 +10,7 @@ var world_springtraining = new function() {
 
   this.options = {};
   this.robotStart = {
-    position: new BABYLON.Vector3(70, 0, -25), // Overridden by position setting,
+    position: new BABYLON.Vector3(50, 0, -25), // Overridden by position setting,
     rotation: new BABYLON.Vector3(0, 0, 0)
   };
 
@@ -286,8 +286,8 @@ var world_springtraining = new function() {
     self.buildStatic(scene,[1,33,3],[41,0.5,22]);
 
   // Boxes for pushing
-    self.buildKinematic(scene,[4,4,4],[72,2,10],800);
-    self.buildKinematic(scene,[4,4,4],[-73,2,22],800);
+    self.buildKinematic(scene,[4,4,4],[50,2,10],800);
+    self.buildKinematic(scene,[4,4,4],[-50,2,22],800);
  //   self.buildKinematic(scene,[4,4,4],[55,2,-22],800);
   };
 
