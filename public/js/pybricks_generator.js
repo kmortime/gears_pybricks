@@ -51,7 +51,7 @@ var pybricks_generator = new function() {
   // Generate python code
   this.genCode = function() {
     let code =
-      '#!/usr/bin/env python3\n' +
+      '#!/usr/bin/env pybricks-micropython\n' +
       `\n` +
       '######################################################\n' +
       '# Basic setup for FSS FLL Spring Training Robot\n' +
