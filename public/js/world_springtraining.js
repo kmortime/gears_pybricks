@@ -283,7 +283,7 @@ var world_springtraining = new function() {
   this.loadObjects = function (scene) {
 
   // Bumps
-    self.buildStatic(scene,[1,33,3],[41,0.5,22]);
+    self.buildStatic(scene,[1,20,3],[30,0.5,10]);
 
   // Boxes for pushing
     self.buildKinematic(scene,[4,4,4],[50,2,10],800);
